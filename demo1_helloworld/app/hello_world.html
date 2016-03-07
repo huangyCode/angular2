@@ -1,0 +1,11 @@
+<label>Name:</label>
+<!-- 双休绑定yourname -->
+<input type="text" [(ngModel)]="yourName" placeholder="Enter a name here">
+<hr>
+<!--当yourname为空则隐藏div,如有则显示-->
+<h1 [hidden]="!yourName">Hello {{yourName}}!</h1>
+<input type="button" (click)="buttonClick()" value="button"/>
+<div [hidden]="!showDiv">
+    你好angular2.0
+</div>
+<my-child></my-child>
